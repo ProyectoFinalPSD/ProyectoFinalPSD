@@ -5,7 +5,7 @@ public class Cliente
 	private int cedula, telefono;
 	private String nombre, direccion, correoElectronico;
 
-	public Cliente(int cd, int tel,String nom, String direc, String correoE)
+	public Cliente(int cd, String nom,String direc, int tel, String correoE)
 	{
 		cedula =  cd;
 		telefono = tel;

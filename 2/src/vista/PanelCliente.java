@@ -3,22 +3,28 @@ package vista;
 import java.awt.Color;
 import java.awt.GridLayout;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
 
 public class PanelCliente extends JPanel
 {
 	private   static   final   long serialVersionUID =   1L ;
 	private JLabel cedula, nombre, direccion, telefono, correoElectronico;
-	private JTextField ce,nom,dir,tel,cE;
+	private JTextField ce,nom,dir,tel,cE,resul;
 	private JButton agregarCliente;
 	private static final String AGREGAR_CLIENTE =  "AGREGAR CLIENTE";
 
 	public PanelCliente()
 	{
 		setLayout( new GridLayout(6,2));
+		
+		TitledBorder titulo = BorderFactory.createTitledBorder("¿Desea ser nuestro cliente?" + "  ¡Registrese aquí!");
+		titulo.setTitleColor(Color.BLACK);
+		setBorder(titulo);
 		
 		cedula =  new JLabel();
 		cedula.setText("Cedula");

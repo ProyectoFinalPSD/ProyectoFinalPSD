@@ -2,23 +2,43 @@ package modelo;
 
 public class Mundo 
 {
-	private MGCl Modulo2;
+	private MGCl ModuloCl;
+	private MGPro ModuloPro;
 	
 	public Mundo()
 	{
-		Modulo2 = new MGCl();		
-	}
-
-	public MGCl getModulo2() 
-	{
-		return Modulo2;
-	}
-
-	public void setModulo2(MGCl modulo2) 
-	{
-		Modulo2 = modulo2;
+		ModuloCl = new MGCl();		
+		ModuloPro =  new MGPro();
 	}
 	
+	public MGCl getModuloCl() 
+	{
+		return ModuloCl;
+	}
+
+
+	public void setModuloCl(MGCl moduloCl) 
+	{
+		ModuloCl = moduloCl;
+	}
+
+
+	public MGPro getModuloPro() 
+	{
+		return ModuloPro;
+	}
+
+
+	public void setModuloPro(MGPro moduloPro) 
+	{
+		ModuloPro = moduloPro;
+	}
+
+
 	
 
+
+	
+
+	
 }
