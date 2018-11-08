@@ -10,8 +10,10 @@ import java.util.concurrent.Flow;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JSeparator;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
 public class PFVPanelIformacion extends JPanel 
@@ -66,8 +68,7 @@ public class PFVPanelIformacion extends JPanel
 		eCE =  new JTextField();
 		eCE.setBackground(Color.WHITE);
 		eCE.setForeground(Color.BLACK);
-
-
+		
 		add(fecha);
 		add(espacioFecha);
 		add(numFactura);
@@ -83,13 +84,6 @@ public class PFVPanelIformacion extends JPanel
 		add(eD);
 		add(eT);
 		add(eCE);
-
-
-
-
-
-
-
 	}
 
 }
